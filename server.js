@@ -14,7 +14,9 @@ const dotenv = require("dotenv");
 ffmpeg.setFfmpegPath(pathToFfmpeg);
 
 dotenv.config();
-mongoose.connect(process.env.MONGODB_URI, {
+mongoose.connect('mongodb+srv://afrin:961215106001@cluster0.hbkqtqv.mongodb.net/jamboard', { useNewUrlParser: true, useUnifiedTopology: true });
+
+mongoose.connect('mongodb+srv://afrin:961215106001@cluster0.hbkqtqv.mongodb.net/talking-tom', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
